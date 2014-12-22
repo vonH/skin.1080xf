@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!-- This file contains the mapping of actions to sounds                    -->
 
 <!-- The <actions> section contains global mapping                          -->
@@ -33,8 +32,60 @@
 <!-- Note: Only wav files are supported                                     -->
 
 <sounds>
-  <actions>
-  </actions>
-  <windows>
-  </windows>
+    <actions>
+        <action>
+          <name>left</name>
+          <file>leftright.wav</file>
+        </action>
+        <action>
+          <name>right</name>
+          <file>leftright.wav</file>
+        </action>
+        <action>
+          <name>up</name>
+          <file>updown.wav</file>
+        </action>
+        <action>
+          <name>down</name>
+          <file>updown.wav</file>
+        </action>
+        <action>
+          <name>select</name>
+          <file>click.wav</file>
+        </action>
+        <action>
+          <name>close</name>
+          <file>close.wav</file>
+        </action>
+        <action>
+          <name>parentdir</name>
+          <file>windowclose.wav</file>
+        </action>
+        <action>
+          <name>previousmenu</name>
+          <file>windowclose.wav</file>
+        </action>
+		<action>
+          <name>screenshot</name>
+          <file>shutter.wav</file>
+        </action>
+    </actions>
+
+    <windows>
+        <window>
+          <name>playercontrols</name>
+          <activate>guideopen.wav</activate>
+          <deactivate>close.wav</deactivate>
+        </window>
+        <window>
+          <name>home</name>
+          <activate>-</activate>
+          <deactivate>windowopen.wav</deactivate>
+        </window>
+        <window>
+          <name>infodialog</name>
+          <activate>kaitoast.wav</activate>
+          <deactivate>-</deactivate>
+        </window>
+    </windows>
 </sounds>
