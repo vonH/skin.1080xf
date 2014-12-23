@@ -5451,7 +5451,7 @@
                             <posx>33</posx>
                             <posy>35</posy>
                             <width>466</width>
-                            <height>262</height>
+                            <height>263</height>
                             <texture diffuse="views/banner/diffuse/episode.png" background="true">$VAR[BannerLandscape]</texture>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
