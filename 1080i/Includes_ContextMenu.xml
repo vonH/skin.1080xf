@@ -97,6 +97,21 @@
                     <texturefocus>dialogs/options/buttons/default-fo.png</texturefocus>
                     <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(artists) | Container.Content(albums) | Container.Content(songs)] + System.HasAddon(script.libraryeditor) + Control.IsVisible(1006)</visible>
                 </control>
+				<control type="button" id="994">
+                    <description>trakt.tv contextmenu</description>
+                    <width>404</width>
+                    <height>57</height>
+                    <font>Font-Condensed-S34</font>
+                    <align>left</align>
+                    <textcolor>FF484848</textcolor>
+                    <focusedcolor>DDFFFFFF</focusedcolor>
+                    <disabledcolor>FF484848</disabledcolor>
+                    <textoffsetx>25</textoffsetx>
+                    <label>trakt.tv options</label>
+                    <onclick>RunScript(script.trakt,action=contextmenu)</onclick>
+                    <texturefocus>dialogs/options/buttons/default-fo.png</texturefocus>
+					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + System.HasAddon(script.trakt) + Control.IsVisible(1006)</visible>
+                </control>
             </control>
             <control type="group">
                 <control type="image">
