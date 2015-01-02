@@ -1547,6 +1547,16 @@
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
                         </control>
+						<control type="image">
+                            <posx>20</posx>
+                            <posy>0</posy>
+                            <width>60</width>
+                            <height>60</height>
+                            <aspect>keepaspect</aspect>
+                            <texture>$VAR[InfoListOverlay]</texture>
+                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <colordiffuse>7FFFFFFF</colordiffuse>
+                        </control>
                         <control type="label">
                             <posx>98</posx>
                             <posy>0</posy>
@@ -1894,6 +1904,16 @@
                             <include>listfocusanim</include>
                             <include>visiblehidefadeinfo</include>
                             <visible>Control.HasFocus(52)</visible>
+                        </control>
+						<control type="image">
+                            <posx>20</posx>
+                            <posy>0</posy>
+                            <width>60</width>
+                            <height>60</height>
+                            <aspect>keepaspect</aspect>
+                            <texture>$VAR[InfoListOverlay]</texture>
+                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <colordiffuse>7FFFFFFF</colordiffuse>
                         </control>
                         <control type="group">
                             <animation type="Focus" condition="Container(52).OnNext | Container(52).OnPrevious" reversible="false">
