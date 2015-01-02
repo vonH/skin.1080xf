@@ -5034,7 +5034,7 @@
                     <control type="group">
                         <posx>825</posx>
                         <control type="label">
-                            <posx>-40</posx>
+                            <posx>-230</posx>
                             <posy>0</posy>
                             <width>210</width>
                             <height>96</height>
@@ -5042,7 +5042,7 @@
 							<font>Font-Condensed-S80-B</font>
                             <textcolor>80FFFFFF</textcolor>
                             <scroll>false</scroll>
-                            <align>left</align>
+                            <align>right</align>
                         </control>
                         <control type="image">
                             <posx>-19</posx>
