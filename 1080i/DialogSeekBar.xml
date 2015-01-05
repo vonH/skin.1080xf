@@ -317,10 +317,10 @@
                                 <aspectratio align="right">keep</aspectratio>
                             </control> -->
 							<control type="image">
-                                <posx>0</posx>
-                                <posy>125</posy>
-                                <width>361</width>
-                                <height>140</height>
+                                <posx>25</posx>
+                                <posy>135</posy>
+                                <width>310</width>
+                                <height>120</height>
                                 <texture background="true">$INFO[Player.Art(tvshow.clearlogo)]</texture>
                                 <aspectratio>stretch</aspectratio>
                                 <visible>!IsEmpty(Player.Art(tvshow.clearlogo))</visible>
