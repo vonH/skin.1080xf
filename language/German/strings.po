@@ -753,7 +753,7 @@ msgid "Updating local add-on directories..."
 msgstr "Lokale Add-on-Verzeichnisse aktualisieren..."
 
 msgctxt "#42160"
-msgid "TV guide"
+msgid "TV Guide"
 msgstr "TV Programm"
 
 msgctxt "#42162"

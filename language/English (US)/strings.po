@@ -765,8 +765,8 @@ msgid "Updating local add-on directories..."
 msgstr "Updating local add-on directories..."
 
 msgctxt "#42160"
-msgid "TV guide"
-msgstr "TV guide"
+msgid "TV Guide"
+msgstr "TV Guide"
 
 msgctxt "#42162"
 msgid "on"
