@@ -306,7 +306,7 @@
                         <control type="group">
                             <posy>825</posy>
                             <visible>VideoPlayer.Content(Episodes)</visible>
-                            <!-- <control type="image">
+                            <control type="image">
                                 <posx>80</posx>
                                 <posy>-35</posy>
                                 <width>276</width>
@@ -315,7 +315,8 @@
                                 <bordertexture border="30">osd/fullscreen/cover-shadow.png</bordertexture>
                                 <bordersize>20</bordersize>
                                 <aspectratio align="right">keep</aspectratio>
-                            </control> -->
+                                <visible>IsEmpty(Player.Art(tvshow.clearlogo))</visible>
+                            </control>
 							<control type="image">
                                 <posx>25</posx>
                                 <posy>135</posy>
