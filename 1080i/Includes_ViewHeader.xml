@@ -60,7 +60,7 @@
         <value condition="substring(Container.FolderPath,library://video/recentlyaddedmovies.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[20386]</value>
         <value condition="substring(Container.FolderPath,library://video/recentlyaddedepisodes.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[20387]</value>
         <value condition="substring(Container.FolderPath,special://videoplaylists/,left) | substring(Container.FolderPath,special://profile/playlists/video/,left)">$LOCALIZE[20012]</value>
-        <value condition="substring(Container.FolderPath,addons://sources/video/,left) | substring(Container.FolderPath,plugin://plugin.video,left)">$LOCALIZE[1037]</value>
+        <value condition="substring(Container.FolderPath,addons://sources/video/,left) | substring(Container.FolderPath,plugin://plugin.video,left)">$INFO[Container.FolderName]</value>
         <value condition="!IsEmpty(Container.FolderPath)">$LOCALIZE[1214]</value>
         <value>$LOCALIZE[3]</value>
     </variable>
@@ -285,7 +285,7 @@
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!substring(Container.FolderPath,special,left) + !substring(Container.FolderPath,addons,left) + !substring(Container.FolderPath,sources,left) + !Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://movies/) + !stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)</visible>
+                        <visible>!substring(Container.FolderPath,special,left) + stringcompare(Container.FolderPath,addons) + !substring(Container.FolderPath,sources,left) + !Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://movies/) + !stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)</visible>
                     </control>
                     <control type="label">
                         <width min="0" max="500">auto</width>
