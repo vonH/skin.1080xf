@@ -217,7 +217,7 @@
                 </control>
                 <control type="label">
                     <include>HomeProfileInfoLabel</include>
-                    <label>$INFO[Window.Property(TVShows.Count),, $LOCALIZE[20343]]</label>
+                    <label>$INFO[Window.Property(TVShows.Count),, $LOCALIZE[41446]]</label>
                     <visible>Container(30).HasFocus(3)</visible>
                 </control>
                 <control type="label">
@@ -416,7 +416,7 @@
             <control type="label">
                 <description>TV Shows</description>
                 <include>HomeLabel</include>
-                <label>$LOCALIZE[20343]</label>
+                <label>$LOCALIZE[41446]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(4)">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(325)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeTVShows)</visible>
@@ -529,7 +529,7 @@
                     <visible>!Skin.HasSetting(HomeMovies)</visible>
                 </item>
                 <item id="4">
-                    <label>$LOCALIZE[20343]</label>
+                    <label>$LOCALIZE[41446]</label>
                     <onclick>noop</onclick>
                     <property name="single">$INFO[Skin.String(HomeTVShowsSingleImage)]</property>
                     <property name="multi">$INFO[Skin.String(HomeTVShowsMultiImage)]</property>
@@ -696,7 +696,7 @@
                                     <scrollout>false</scrollout>
                                     <pauseatend>5000</pauseatend>
                                     <label>$LOCALIZE[342]...</label>
-                                    <label>$LOCALIZE[20343]...</label>
+                                    <label>$LOCALIZE[41446]...</label>
                                     <label>$LOCALIZE[33054]...</label>
                                     <label>$LOCALIZE[20360]...</label>
                                     <label>$LOCALIZE[20389]...</label>
@@ -1184,7 +1184,7 @@
                         </control>
                     </control>
                     <control type="group" id="503">
-                        <description>Ongoing tv shows</description>
+                        <description>Ongoing TV Shows</description>
                         <posx>867</posx>
                         <control type="button" id="5031">
                             <posx>0</posx>
@@ -2696,7 +2696,7 @@
                         </focusedlayout>
                         <content>
                             <item id="1">
-                                <label fallback="20343">$INFO[Skin.String(HomeTVShowTile3.Label)]</label>
+                                <label fallback="41446">$INFO[Skin.String(HomeTVShowTile3.Label)]</label>
                                 <label2>$INFO[Window.Property(TVShows.Count)]</label2>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeTVShowTile3) + !stringcompare(Skin.String(HomeTVShowTile3.Type),4) + !stringcompare(Skin.String(HomeTVShowTile3.Type),5) + !stringcompare(Skin.String(HomeTVShowTile3.Type),6) + !stringcompare(Skin.String(HomeTVShowTile3.Type),7)">RunAddon($INFO[Skin.String(HomeTVShowTile3.Path)])</onclick>
                                 <onclick condition="IsEmpty(Window.Property(EditTile)) + Skin.HasSetting(HomeTVShowTile3) + stringcompare(Skin.String(HomeTVShowTile3.Type),4)">ActivateWindow(Videos,$INFO[Skin.String(HomeTVShowTile3.Path)],return)</onclick>

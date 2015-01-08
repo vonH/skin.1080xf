@@ -684,10 +684,10 @@
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
                         <include>SettingsCategoryDefaultButtonVars</include>
-                        <label>$LOCALIZE[20343]</label>
+                        <label>$LOCALIZE[41446]</label>
                         <onclick>ClearProperty(CustomDialogType)</onclick>
                         <onclick>ClearProperty(CustomDialog)</onclick>
-                        <onclick>SetProperty(Dialog,$LOCALIZE[20343])</onclick>
+                        <onclick>SetProperty(Dialog,$LOCALIZE[41446])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
                     </control>
                     <control type="button" id="5006">
