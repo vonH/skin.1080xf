@@ -1,4 +1,35 @@
-﻿[B]3.40.71[/B]
+﻿[B]3.44.06[/B]
+• Changes order of Power/Menu options to allow 'Exit' to be the first option, with the others being moved down the list.
+
+[B]3.44.05[/B]
+• Changes to tile colours for Movies, TV Shows and Music - will use parent colour.
+
+[B]3.44.04[/B]
+• Change to tile colour for TV and Music sections on Home
+
+[B]3.44.03[/B]
+• Resolved Movie Set icon not displaying in List viewtype
+
+[B]3.44.02[/B]
+• Resolved "YouTube activation code not being displayed" issue.
+
+[B]3.44.00[/B]
+• Redesign of Fanart Viewtype
+
+[B]3.43.10[/B]
+• Various small fixes
+
+[B]3.43.00[/B]
+• New textures for all themes for System Information (Home Settings)
+• New textures for all themes for Fanart Viewtype
+
+[B]3.42.00[/B]
+• Added new option to disable Weather in Skin Settings
+
+[B]3.41.00[/B]
+• Extensive Home screen changes to Home, Movies, TV, Music, Applications, Weather and System
+
+[B]3.40.71[/B]
 • New default icons for PVR types
 
 [B]3.40.70[/B]
