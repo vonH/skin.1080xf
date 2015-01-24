@@ -4890,7 +4890,7 @@
 					<onright condition="!Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
 					<onclick>ActivateWindow(4)</onclick>
 					<onup condition="!System.HasAddon(service.openelec.settings)">80</onup>
-					<onup condition="System.HasAddon(service.openelec.settings)">ActivateWindow(3026)</onup>
+					<onup condition="System.HasAddon(service.openelec.settings)">RunAddon(service.openelec.settings)</onup>
                     <ondown>801</ondown>
                 </control>
                 <control type="group" id="850">
