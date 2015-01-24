@@ -2064,7 +2064,6 @@
                         <scrolltime>0</scrolltime>
                         <itemlayout width="289" height="289">
                             <control type="group">
-                                <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
                                 <control type="image">
                                     <posx>19</posx>
                                     <posy>19</posy>
@@ -2124,20 +2123,12 @@
                                     <texture border="40">windows/home/tile-fo.png</texture>
                                     <animation type="Focus">
                                         <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-                                        <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
                                     </animation>
                                     <animation type="Unfocus">
                                         <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-                                        <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
                                     </animation>
                                 </control>
                                 <control type="group">
-                                    <animation type="Focus">
-                                        <effect type="fade" start="90" end="100" time="200" tween="sine" easing="in" />
-                                    </animation>
-                                    <animation type="Unfocus">
-                                        <effect type="fade" start="100" end="90" time="200" tween="sine" easing="out" />
-                                    </animation>
                                     <control type="image">
                                         <posx>19</posx>
                                         <posy>19</posy>
@@ -2783,7 +2774,6 @@
                         <scrolltime>0</scrolltime>
                         <itemlayout width="289" height="289">
                             <control type="group">
-                                <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
                                 <control type="image">
                                     <posx>19</posx>
                                     <posy>19</posy>
@@ -2843,20 +2833,12 @@
                                     <texture border="40">windows/home/tile-fo.png</texture>
                                     <animation type="Focus">
                                         <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-                                        <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
                                     </animation>
                                     <animation type="Unfocus">
                                         <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-                                        <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
                                     </animation>
                                 </control>
                                 <control type="group">
-                                    <animation type="Focus">
-                                        <effect type="fade" start="90" end="100" time="200" tween="sine" easing="in" />
-                                    </animation>
-                                    <animation type="Unfocus">
-                                        <effect type="fade" start="100" end="90" time="200" tween="sine" easing="out" />
-                                    </animation>
                                     <control type="image">
                                         <posx>19</posx>
                                         <posy>19</posy>
@@ -3450,10 +3432,8 @@
                                 <width>293</width>
                                 <height>293</height>
                                 <texture border="7">windows/home/tile-orange.png</texture>
-                                <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
                             </control>
                             <control type="group">
-                                <animation effect="fade" end="90" time="0" condition="true">Conditional</animation>
                                 <control type="image">
                                     <posx>24</posx>
                                     <posy>24</posy>
@@ -3506,11 +3486,9 @@
                                     <texture border="40">windows/home/tile-fo.png</texture>
                                     <animation type="Focus">
                                         <effect type="zoom" start="95" end="100" time="200" tween="sine" easing="inout" center="auto" />
-                                        <effect type="fade" start="0" end="100" time="200" tween="sine" easing="in" />
                                     </animation>
                                     <animation type="Unfocus">
                                         <effect type="zoom" start="100" end="95" time="200" tween="sine" easing="inout" center="auto" />
-                                        <effect type="fade" start="100" end="0" time="200" tween="sine" easing="out" />
                                     </animation>
                                 </control>
                                 <control type="image">
@@ -3519,20 +3497,8 @@
                                     <width>293</width>
                                     <height>293</height>
                                     <texture border="7">windows/home/tile-orange.png</texture>
-                                    <animation type="Focus">
-                                        <effect type="fade" start="90" end="100" time="200" tween="sine" easing="in" />
-                                    </animation>
-                                    <animation type="Unfocus">
-                                        <effect type="fade" start="100" end="90" time="200" tween="sine" easing="out" />
-                                    </animation>
                                 </control>
                                 <control type="group">
-                                    <animation type="Focus">
-                                        <effect type="fade" start="90" end="100" time="200" tween="sine" easing="in" />
-                                    </animation>
-                                    <animation type="Unfocus">
-                                        <effect type="fade" start="100" end="90" time="200" tween="sine" easing="out" />
-                                    </animation>
                                     <control type="image">
                                         <posx>24</posx>
                                         <posy>24</posy>

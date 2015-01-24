@@ -1,4 +1,21 @@
-﻿[B]3.44.08[/B]
+﻿[B]3.44.14[/B]
+• New paused icon stays central, no matter which dialog is displayed
+
+[B]3.44.13[/B]
+• Fixes tile fade issue in Home
+
+[B]3.44.12[/B]
+• Adds new textures for the themes
+• New 'pause' icon on paused video (file, movie, tv, Live TV)
+
+[B]3.44.10[/B]
+• Fixes CPU information on System for Linux users
+
+[B]3.44.09[/B]
+• Fixes 2 left offset pixels on Spotlight, Movies Slide, TV Shows Slide, Music Slide
+• Fixes 3 right offset pixels on Spotlight, Movies Slide, TV Shows Slide, Music Slide
+
+[B]3.44.08[/B]
 • Changes to the EPG viewtype
 • Now central on screen
 • Large to allow more channels
