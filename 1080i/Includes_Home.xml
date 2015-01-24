@@ -3221,7 +3221,7 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
-                                    <texture border="7">windows/home/tile-orange.png</texture>
+                                    <texture border="7">windows/home/tile-red.png</texture>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -3298,7 +3298,7 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
-                                        <texture border="7">windows/home/tile-orange.png</texture>
+                                        <texture border="7">windows/home/tile-red.png</texture>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -3431,7 +3431,7 @@
                                 <posy>19</posy>
                                 <width>293</width>
                                 <height>293</height>
-                                <texture border="7">windows/home/tile-orange.png</texture>
+                                <texture border="7">windows/home/tile-red.png</texture>
                             </control>
                             <control type="group">
                                 <control type="image">
@@ -3496,7 +3496,7 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
-                                    <texture border="7">windows/home/tile-orange.png</texture>
+                                    <texture border="7">windows/home/tile-red.png</texture>
                                 </control>
                                 <control type="group">
                                     <control type="image">
@@ -4756,7 +4756,7 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
-                                    <texture border="7">windows/home/tile.png</texture>
+                                    <texture border="7">windows/home/tile-orange.png</texture>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -4816,7 +4816,7 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
-                                        <texture border="7">windows/home/tile.png</texture>
+                                        <texture border="7">windows/home/tile-orange.png</texture>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
