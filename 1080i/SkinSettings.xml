@@ -245,6 +245,12 @@
                         <enable>Skin.HasSetting(StartupPlaylist)</enable>
                         <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(1009)">Conditional</animation>
                     </control>
+					<control type="button" id="10091">
+                        <width>1210</width>
+						<include>SettingsCategoryReloadSkin</include>
+                        <onclick>ReloadSkin</onclick>
+                        <label>$LOCALIZE[41352]</label>
+                    </control>	
                     <control type="group" id="1007">
                         <description>Fake spin control</description>
                         <width>1210</width>
@@ -273,7 +279,7 @@
                             <height>60</height>
                             <onleft>10072</onleft>
                             <onright>10072</onright>
-                            <onup>1009</onup>
+                            <onup>10091</onup>
                             <ondown>1001</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
@@ -349,10 +355,10 @@
                             <label>$LOCALIZE[20304]</label>
                             <label2>$INFO[Skin.String(rss.setting)]</label2>
                             <visible>ControlGroup(1007).HasFocus</visible>
-                        </control>
+                        </control>             
                     </control>
                 </control>
-            
+            	       
                 <!-- ============= -->  
                 <!-- Home Settings -->
                 <!-- ============= -->
@@ -684,10 +690,10 @@
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
                         <include>SettingsCategoryDefaultButtonVars</include>
-                        <label>$LOCALIZE[20343]</label>
+                        <label>$LOCALIZE[41446]</label>
                         <onclick>ClearProperty(CustomDialogType)</onclick>
                         <onclick>ClearProperty(CustomDialog)</onclick>
-                        <onclick>SetProperty(Dialog,$LOCALIZE[20343])</onclick>
+                        <onclick>SetProperty(Dialog,$LOCALIZE[41446])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
                     </control>
                     <control type="button" id="5006">
@@ -854,53 +860,46 @@
                     <control type="button" id="7001">
                         <width>1210</width>
                         <include>SettingsCategoryDefaultButtonVars</include>
-                        <label>$LOCALIZE[41281]</label>
-                        <label2>[COLOR=SelectedBlue]$INFO[system.addontitle(Skin.String(SubtitleScript_Path))][/COLOR]</label2>
-                        <onclick>Skin.SetAddon(SubtitleScript_Path,xbmc.python.subtitles)</onclick>
-                    </control>
-                    <control type="button" id="7002">
-                        <width>1210</width>
-                        <include>SettingsCategoryDefaultButtonVars</include>
                         <label>$LOCALIZE[41282]</label>
                         <label2>[COLOR=SelectedBlue]$INFO[system.addontitle(Skin.String(LyricScript_Path))][/COLOR]</label2>
                         <onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
                     </control>
-                    <control type="radiobutton" id="7005">
+                    <control type="radiobutton" id="7002">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(TVTunes.Enabled)</selected>
                         <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
                         <label>$LOCALIZE[41283]</label>
                     </control>
-                    <control type="button" id="7006">
+                    <control type="button" id="7003">
                         <width>1210</width>
                         <include>SettingsCategoryDefaultButtonVars</include>
                         <onclick>XBMC.RunScript(script.tvtunes)</onclick>
                         <label>- $LOCALIZE[41284]</label>
                         <visible>Skin.HasSetting(TVTunes.Enabled)</visible>
                     </control>
-                    <control type="radiobutton" id="7007">
+                    <control type="radiobutton" id="7004">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(NextAired.Enabled)</selected>
                         <onclick>Skin.ToggleSetting(NextAired.Enabled)</onclick>
                         <label>$LOCALIZE[41285]</label>
                     </control>
-                    <control type="radiobutton" id="7008">
+                    <control type="radiobutton" id="7005">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(NextAired.Update)</selected>
                         <onclick>Skin.ToggleSetting(NextAired.Update)</onclick>
                         <label>- $LOCALIZE[41293]</label>
                     </control>
-                    <control type="button" id="7009">
+                    <control type="button" id="7006">
                         <width>1210</width>
                         <include>SettingsCategoryDefaultButtonVars</include>
                         <onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
                         <label>- $LOCALIZE[41290]</label>
                         <visible>Skin.HasSetting(NextAired.Enabled)</visible>
                     </control>
-                    <control type="radiobutton" id="7010">
+                    <control type="radiobutton" id="7007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(UpdateArt.Enabled)</selected>

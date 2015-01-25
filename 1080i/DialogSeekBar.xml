@@ -315,6 +315,16 @@
                                 <bordertexture border="30">osd/fullscreen/cover-shadow.png</bordertexture>
                                 <bordersize>20</bordersize>
                                 <aspectratio align="right">keep</aspectratio>
+                                <visible>IsEmpty(Player.Art(tvshow.clearlogo))</visible>
+                            </control>
+							<control type="image">
+                                <posx>25</posx>
+                                <posy>135</posy>
+                                <width>310</width>
+                                <height>120</height>
+                                <texture background="true">$INFO[Player.Art(tvshow.clearlogo)]</texture>
+                                <aspectratio>stretch</aspectratio>
+                                <visible>!IsEmpty(Player.Art(tvshow.clearlogo))</visible>
                             </control>
                             <control type="label">
                                 <posx>360</posx>
@@ -478,6 +488,19 @@
                                     <align>left</align>
                                     <aligny>center</aligny>
                                     <scroll>true</scroll>
+                                    <visible>IsEmpty(VideoPlayer.Plot)</visible>
+                                </control>
+                                <control type="textbox">
+                                    <posx>360</posx>
+                                    <posy>192</posy>
+                                    <width>1460</width>
+                                    <height>90</height>
+                                    <label>$INFO[VideoPlayer.Plot]</label>
+                                    <textcolor>aawhite</textcolor>
+                                    <font>Font-Condensed-S32</font>
+                                    <align>justify</align>
+                                    <visible>!IsEmpty(VideoPlayer.Plot)</visible>
+                                    <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                                 </control>
                             </control>
                         </control>

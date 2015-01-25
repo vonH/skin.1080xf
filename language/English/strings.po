@@ -580,11 +580,11 @@ msgstr ""
 #empty string with id 41449
 
 msgctxt "#41450"
-msgid "New movies"
+msgid "New Movies"
 msgstr ""
 
 msgctxt "#41451"
-msgid "New shows"
+msgid "New Shows"
 msgstr ""
 
 msgctxt "#41452"
@@ -914,7 +914,7 @@ msgstr ""
 #From 42160 to 42179
 
 msgctxt "#42160"
-msgid "TV guide"
+msgid "TV Guide"
 msgstr ""
 
 #empty string with id 42161

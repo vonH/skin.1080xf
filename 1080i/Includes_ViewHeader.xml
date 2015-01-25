@@ -55,12 +55,12 @@
     
     <variable name="VideoHeaderLabel">
         <value condition="substring(Container.FolderPath,library://video/movies/,left) | substring(Container.FolderPath,videodb://movies/,left)">$LOCALIZE[342]</value>
-        <value condition="substring(Container.FolderPath,library://video/tvshows/,left) | substring(Container.FolderPath,videodb://tvshows/,left)">$LOCALIZE[20343]</value>
+        <value condition="substring(Container.FolderPath,library://video/tvshows/,left) | substring(Container.FolderPath,videodb://tvshows/,left)">$LOCALIZE[41446]</value>
         <value condition="substring(Container.FolderPath,library://video/inprogressshows.xml/,left)">$LOCALIZE[626]</value>
         <value condition="substring(Container.FolderPath,library://video/recentlyaddedmovies.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[20386]</value>
         <value condition="substring(Container.FolderPath,library://video/recentlyaddedepisodes.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[20387]</value>
         <value condition="substring(Container.FolderPath,special://videoplaylists/,left) | substring(Container.FolderPath,special://profile/playlists/video/,left)">$LOCALIZE[20012]</value>
-        <value condition="substring(Container.FolderPath,addons://sources/video/,left) | substring(Container.FolderPath,plugin://plugin.video,left)">$LOCALIZE[1037]</value>
+        <value condition="substring(Container.FolderPath,addons://sources/video/,left) | substring(Container.FolderPath,plugin://plugin.video,left)">$INFO[Container.FolderName]</value>
         <value condition="!IsEmpty(Container.FolderPath)">$LOCALIZE[1214]</value>
         <value>$LOCALIZE[3]</value>
     </variable>
@@ -188,7 +188,7 @@
                 <align>left</align>
                 <visible>!IntegerGreaterThan(Container.NumItems,0) | IntegerGreaterThan(Container.NumItems,1)</visible>
             </control>
-            <control type="label">
+            <!-- <control type="label">
                 <width min="50" max="400">auto</width>
                 <height>120</height>
                 <label>$INFO[Container.CurrentPage, [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[41819] ,]$INFO[Container.NumPages,/,]</label>
@@ -197,7 +197,7 @@
                 <scroll>false</scroll>
                 <align>left</align>
                 <visible>IntegerGreaterThan(Container.NumPages,1)</visible>
-            </control>
+            </control> -->
         </control>
     </include>
     
@@ -285,17 +285,17 @@
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!substring(Container.FolderPath,special,left) + !substring(Container.FolderPath,addons,left) + !substring(Container.FolderPath,sources,left) + !Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://movies/)</visible>
+                        <visible>!substring(Container.FolderPath,special,left) + stringcompare(Container.FolderPath,addons) + !substring(Container.FolderPath,sources,left) + !Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://movies/) + !stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)</visible>
                     </control>
                     <control type="label">
                         <width min="0" max="500">auto</width>
                         <height>120</height>
-                        <label>$INFO[Container.ListItem.TVShowTitle,: ,]$INFO[Container.ListItem.Season, (,)]</label>
+                        <label>$INFO[Container.ListItem.TVShowTitle,: ,]</label>
                         <font>Font-Condensed-S36-B</font>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>Container.Content(episodes)</visible>
+                        <visible>Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)</visible>
                     </control>
                 </control>
             </control>

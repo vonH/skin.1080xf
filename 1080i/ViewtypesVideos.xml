@@ -217,7 +217,7 @@
                     </control>
                     <control type="image">
                         <description>Set icon</description>
-                        <posx>147</posx>
+                        <posx>1146</posx>
                         <posy>19</posy>
                         <width>90</width>
                         <height>60</height>
@@ -666,7 +666,7 @@
                         </control>
                         <control type="image">
                             <description>Set icon</description>
-                            <posx>147</posx>
+                            <posx>1146</posx>
                             <posy>19</posy>
                             <width>90</width>
                             <height>60</height>
@@ -1547,6 +1547,16 @@
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
                         </control>
+						<control type="image">
+                            <posx>20</posx>
+                            <posy>0</posy>
+                            <width>60</width>
+                            <height>60</height>
+                            <aspect>keepaspect</aspect>
+                            <texture>$VAR[InfoListOverlay]</texture>
+                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <colordiffuse>7FFFFFFF</colordiffuse>
+                        </control>
                         <control type="label">
                             <posx>98</posx>
                             <posy>0</posy>
@@ -1894,6 +1904,16 @@
                             <include>listfocusanim</include>
                             <include>visiblehidefadeinfo</include>
                             <visible>Control.HasFocus(52)</visible>
+                        </control>
+						<control type="image">
+                            <posx>20</posx>
+                            <posy>0</posy>
+                            <width>60</width>
+                            <height>60</height>
+                            <aspect>keepaspect</aspect>
+                            <texture>$VAR[InfoListOverlay]</texture>
+                            <visible>!IsEmpty(ListItem.Overlay)</visible>
+                            <colordiffuse>7FFFFFFF</colordiffuse>
                         </control>
                         <control type="group">
                             <animation type="Focus" condition="Container(52).OnNext | Container(52).OnPrevious" reversible="false">
@@ -2407,6 +2427,7 @@
             <control type="group">
                 <posx>100</posx>
                 <posy>260</posy>
+				<animation effect="slide" start="0,0" end="0,250" time="0" condition="!Skin.HasSetting(ExtendedPlot) + !Container.Content(Episodes)">Conditional</animation>
                 <animation effect="fade" start="0" end="100" time="0" reversible="false">Visible</animation>
                 <visible>Window.Next(Home) | Window.Next(programs) | Window.Next(pictures) | Window.Next(filemanager) | Window.Next(settings) | Window.Next(music) | Window.Next(systeminfo) | Window.Next(screencalibration) | Window.Next(picturessettings) | Window.Next(programssettings) | Window.Next(weathersettings) | Window.Next(musicsettings) | Window.Next(systemsettings) | Window.Next(videossettings) | Window.Next(servicesettings) | Window.Next(appearancesettings) | Window.Next(pvrsettings) | Window.Next(videos) | Window.Next(videoplaylist) | Window.Next(LoginScreen) | Window.Next(profiles) | Window.Next(addonbrowser) | Window.Next(filebrowser) | Window.Next(ProfileSettings) | Window.Next(LockSettings) | Window.Next(smartplaylisteditor) | Window.Next(smartplaylistrule) | Window.Next(musicplaylist) | Window.Next(musicfiles) | Window.Next(musiclibrary) | Window.Next(fullscreenvideo) | Window.Next(visualisation) | Window.Next(slideshow) | Window.Next(karaoke) | Window.Next(weather) | Window.Next(pvr) | Window.Next(script-NextAired-TVGuide.xml) | !Control.IsVisible(81)</visible>
                 <control type="group">
@@ -2438,12 +2459,13 @@
                                 <height>50</height>
                                 <width>500</width>
                                 <texture>dialogs/shutdown/shadow.png</texture>
+								<animation effect="slide" start="0,0" end="0,-250" time="0" condition="!Skin.HasSetting(ExtendedPlot) + !Container.Content(Episodes)">Conditional</animation>
                             </control>
                             <control type="image">
                                 <posx>-5</posx>
                                 <posy>265</posy>
                                 <width>490</width>
-                                <height>360</height>
+                                <height>110</height>
                                 <texture border="7">windows/home/tile-grey.png</texture>
                                 <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                             </control>
@@ -2488,6 +2510,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <autoscroll>false</autoscroll>
                                 <font>Font-Condensed-S28</font>
+								<visible>Container.Content(Episodes)</visible>
                             </control>
                             <control type="image">
                                 <description>Set icon</description>
@@ -2568,12 +2591,13 @@
                                 <height>50</height>
                                 <width>500</width>
                                 <texture>dialogs/shutdown/shadow.png</texture>
+								<animation effect="slide" start="0,0" end="0,-250" time="0" condition="!Skin.HasSetting(ExtendedPlot) + !Container.Content(Episodes)">Conditional</animation>
                             </control>
                             <control type="image">
                                 <posx>-5</posx>
                                 <posy>265</posy>
                                 <width>490</width>
-                                <height>360</height>
+                                <height>110</height>
                                 <texture border="7">windows/home/tile-grey.png</texture>
                                 <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                             </control>
@@ -2618,6 +2642,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <autoscroll>false</autoscroll>
                                 <font>Font-Condensed-S28</font>
+								<visible>Container.Content(Episodes)</visible>
                             </control>
                             <control type="image">
                                 <description>Set icon</description>
@@ -2698,12 +2723,13 @@
                                 <height>50</height>
                                 <width>500</width>
                                 <texture>dialogs/shutdown/shadow.png</texture>
+								<animation effect="slide" start="0,0" end="0,-250" time="0" condition="!Skin.HasSetting(ExtendedPlot) + !Container.Content(Episodes)">Conditional</animation>
                             </control>
                             <control type="image">
                                 <posx>-5</posx>
                                 <posy>265</posy>
                                 <width>490</width>
-                                <height>360</height>
+                                <height>110</height>
                                 <texture border="7">windows/home/tile-grey.png</texture>
                                 <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                             </control>
@@ -2748,6 +2774,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <autoscroll>false</autoscroll>
                                 <font>Font-Condensed-S28</font>
+								<visible>Container.Content(Episodes)</visible>
                             </control>
                             <control type="image">
                                 <description>Set icon</description>
@@ -2828,12 +2855,13 @@
                                 <height>50</height>
                                 <width>500</width>
                                 <texture>dialogs/shutdown/shadow.png</texture>
+								<animation effect="slide" start="0,0" end="0,-250" time="0" condition="!Skin.HasSetting(ExtendedPlot) + !Container.Content(Episodes)">Conditional</animation>
                             </control>
                             <control type="image">
                                 <posx>-5</posx>
                                 <posy>265</posy>
                                 <width>490</width>
-                                <height>360</height>
+                                <height>110</height>
                                 <texture border="7">windows/home/tile-grey.png</texture>
                                 <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                             </control>
@@ -2878,6 +2906,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <autoscroll>false</autoscroll>
                                 <font>Font-Condensed-S28</font>
+								<visible>Container.Content(Episodes)</visible>
                             </control>
                             <control type="image">
                                 <description>Set icon</description>
@@ -2956,12 +2985,13 @@
                         <height>50</height>
                         <width>500</width>
                         <texture>dialogs/shutdown/shadow.png</texture>
+						<animation effect="slide" start="0,0" end="0,-250" time="0" condition="!Skin.HasSetting(ExtendedPlot) + !Container.Content(Episodes)">Conditional</animation>
                     </control>
                     <control type="image">
                         <posx>-5</posx>
                         <posy>265</posy>
                         <width>490</width>
-                        <height>360</height>
+                        <height>110</height>
                         <texture border="7">windows/home/tile-grey.png</texture>
                     </control>
                     <control type="image">
@@ -3005,6 +3035,7 @@
                         <shadowcolor>22000000</shadowcolor>
                         <autoscroll>false</autoscroll>
                         <font>Font-Condensed-S28</font>
+						<visible>Container.Content(Episodes)</visible>
                     </control>
                     <control type="image">
                         <description>Set icon</description>
@@ -3055,7 +3086,8 @@
 
             <control type="group">
                 <visible>!Window.IsActive(movieinformation) + !Window.IsActive(script-Actors-DialogInfo.xml) + !Window.IsActive(script-Actors-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + Control.IsVisible(54) + !Window.IsActive(favourites)</visible>
-                <animation effect="fade" start="100" end="0" time="0" reversible="false">Hidden</animation>
+                <animation effect="slide" start="0,0" end="0,250" time="0" condition="!Skin.HasSetting(ExtendedPlot) + !Container.Content(Episodes)">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="0" reversible="false">Hidden</animation>
                 <animation effect="fade" start="0" end="100" time="0" delay="1000" reversible="false">Visible</animation>
                 <control type="fixedlist" id="54">
                     <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Episodes) | Container.Content(Sets)</visible>
@@ -3090,12 +3122,13 @@
                                 <height>50</height>
                                 <width>500</width>
                                 <texture>dialogs/shutdown/shadow.png</texture>
+								<animation effect="slide" start="0,0" end="0,-250" time="0" condition="!Skin.HasSetting(ExtendedPlot) + !Container.Content(Episodes)">Conditional</animation>
                             </control>
                             <control type="image">
                                 <posx>-5</posx>
                                 <posy>265</posy>
                                 <width>490</width>
-                                <height>360</height>
+                                <height>110</height>
                                 <texture border="7">windows/home/tile-grey.png</texture>
                                 <animation effect="fade" end="60" time="0" condition="true">Conditional</animation>
                             </control>
@@ -3140,6 +3173,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <autoscroll>false</autoscroll>
                                 <font>Font-Condensed-S28</font>
+								<visible>Container.Content(Episodes)</visible>
                             </control>
                             <control type="image">
                                 <description>Set icon</description>
@@ -3203,6 +3237,7 @@
                                 <height>50</height>
                                 <width>500</width>
                                 <texture>dialogs/shutdown/shadow.png</texture>
+								<animation effect="slide" start="0,0" end="0,-250" time="0" condition="!Skin.HasSetting(ExtendedPlot) + !Container.Content(Episodes)">Conditional</animation>
                             </control>
                             <control type="group">
                                 <animation type="Focus" condition="Container(54).OnNext | Container(54).OnPrevious">
@@ -3215,7 +3250,7 @@
                                     <posx>-5</posx>
                                     <posy>265</posy>
                                     <width>490</width>
-                                    <height>360</height>
+                                    <height>110</height>
                                     <texture border="7">windows/home/tile-grey.png</texture>
                                 </control>
                             </control>
@@ -3260,6 +3295,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <autoscroll delay="13000" time="3000" repeat="13000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                                 <font>Font-Condensed-S28</font>
+								<visible>Container.Content(Episodes)</visible>
                             </control>
                             <control type="image">
                                 <description>Set icon</description>
@@ -4848,7 +4884,199 @@
             </control>
         </control>
     </include>
-
+	<!-- =============== -->
+	<!-- FanartSlide (502) -->
+	<!-- =============== -->
+	<include name="Viewtype-FanartSlide-Content">
+		<control type="group">
+			<posx>5</posx>
+			<posy>-</posy>
+			<control type="image">
+				<posx>95</posx>
+				<posy>0</posy>
+				<width>1720</width>
+				<height>734</height>
+				<texture>views/fanart/back-tile.png</texture>
+			</control>
+			<control type="image">
+				<posx>664</posx>
+				<posy>0</posy>
+				<width>1151</width>
+				<height>734</height>
+				<texture>windows/common/darkgrey.png</texture>
+			</control>		
+			<control type="image">
+				<description>Landscape</description>
+				<posx>664</posx>
+				<posy>-44</posy>
+				<width>1151</width>
+				<height>734</height>
+				<texture background="true">$VAR[FanArtLandscape]</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="image">
+				<posx>664</posx>
+				<posy>647</posy>
+				<width>1151</width>
+				<height>87</height>
+				<texture>windows/common/darkgrey.png</texture>		 
+			</control>			
+			<control type="label">
+				<posx>690</posx>
+				<posy>656</posy>
+				<width>1216</width>
+				<height>66</height>
+				<label>$INFO[ListItem.Label]</label>
+				<textcolor>aawhite</textcolor>
+				<font>Font-Condensed-S38</font>
+				<align>left</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+			</control>
+			<control type="label">
+				<posx>690</posx>
+				<posy>656</posy>
+				<width>1098</width>
+				<height>66</height>
+				<label>$INFO[ListItem.Rating,★ ,]$INFO[ListItem.Duration, [COLOR=ffffffff]/[/COLOR] , $LOCALIZE[12391]]</label>
+				<textcolor>aawhite</textcolor>
+				<font>Font-Condensed-S38</font>
+				<align>right</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+			</control>		
+			<control type="label">
+				<posx>125</posx>
+				<posy>680</posy>
+				<width>500</width>
+				<font>Font-Condensed-S36</font>
+				<label>$VAR[ListItem.Year]</label>
+				<textcolor>aawhite</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+			</control>			
+			<control type="label">
+				<posx>125</posx>
+				<posy>640</posy>
+				<width>500</width>
+				<font>Font-Condensed-S36</font>
+				<label>$INFO[ListItem.Genre]</label>
+				<textcolor>aawhite</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+			</control>
+			<control type="label">
+				<posx>125</posx>
+				<posy>600</posy>
+				<width>500</width>
+				<font>Font-Condensed-S36</font>
+				<label>$LOCALIZE[16101]: $INFO[ListItem.Property(UnWatchedEpisodes)] / $INFO[ListItem.Property(TotalEpisodes)]</label>
+				<textcolor>aawhite</textcolor>
+				<align>left</align>
+				<aligny>center</aligny>
+				<scroll>false</scroll>
+				<visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
+			</control>		
+			<control type="label">
+				<posx>125</posx>
+				<posy>32</posy>
+				<width>510</width>
+				<font>Font-Condensed-S60</font>
+				<label>$LOCALIZE[207]</label> 
+				<textcolor>aawhite</textcolor>
+				<shadowcolor>22000000</shadowcolor>
+				<scroll>false</scroll>
+				<visible>!IsEmpty(ListItem.Plot)</visible>
+			</control>		
+			<control type="textbox">
+				<posx>125</posx>
+				<posy>80</posy>
+				<width>510</width>
+				<height>350</height>
+				<label>$INFO[ListItem.Plot]</label>
+				<textcolor>aawhite</textcolor>
+				<font>Font-Condensed-S28</font>
+				<align>justify</align>
+				<scroll>true</scroll>
+				<autoscroll delay="8000" time="3000" repeat="13000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
+			</control>
+			<control type="image">
+				<posx>575</posx>
+				<posy>18</posy>
+				<width>60</width>
+				<height>57</height>
+				<aspectratio align="right" aligny="center">keep</aspectratio>
+				<texture>$INFO[ListItem.Studio,special://skin/extras/studioflags/,.png]</texture>
+				<colordiffuse>aawhite</colordiffuse>
+				<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Studio)</visible>
+			</control>
+			<control type="image">
+				<description>Flagging</description>
+				<posx>535</posx>
+				<posy>0</posy>
+				<width>140</width>
+				<height>100</height>
+				<texture>$VAR[ListHDSDFlag]</texture>
+				<colordiffuse>$VAR[Colordiffuse.Color]</colordiffuse>
+				<visible>!IsEmpty(ListItem.VideoResolution)</visible>
+			</control>
+		</control>
+	</include>
+	<include name="Viewtype-FanartSlide">
+		<control type="group">
+			<visible>Control.IsVisible(502) + !Window.IsActive(movieinformation)</visible>
+			<include>BannerListAnimations</include>
+			<include>OptionsShutdownAnimation</include>
+			<control type="group">
+				<posy>535</posy>
+				<animation effect="fade" start="0" end="100" delay="415" time="300" reversible="false" condition="![Container(502).OnNext | Container(502).OnPrevious]">Conditional</animation>
+				<control type="image">
+					<description>Left arrow</description>
+					<posx>42</posx>
+					<width>100</width>
+					<height>100</height>
+					<texture>views/fanart/arrow-left.png</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<colordiffuse>aawhite</colordiffuse>
+				</control>
+				<control type="image">
+					<description>Right arrow</description>
+					<posx>1778</posx>
+					<width>100</width>
+					<height>100</height>
+					<texture>views/fanart/arrow-right.png</texture>
+					<aspectratio align="center" aligny="center">keep</aspectratio>
+					<colordiffuse>aawhite</colordiffuse>
+				</control>
+			</control>
+			<control type="wraplist" id="502">
+				<posx>0</posx>
+				<posy>220</posy>
+				<width>1920</width>
+				<height>800</height>
+				<scrolltime tween="cubic" easing="out">500</scrolltime>
+				<orientation>horizontal</orientation>
+				<viewtype label="20445">fanart</viewtype>
+				<ondown>706</ondown>
+				<pagecontrol>706</pagecontrol>
+				<onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
+				<onup condition="Skin.HasSetting(KioskMode)">502</onup>
+				<onleft>502</onleft>
+				<onright>502</onright>
+				<preloaditems>0</preloaditems>
+				<focusposition>0</focusposition>
+				<itemlayout width="1920">
+					<include>Viewtype-FanartSlide-Content</include>
+				</itemlayout>
+				<focusedlayout width="1920">
+					<include>Viewtype-FanartSlide-Content</include>
+				</focusedlayout>
+			</control>
+		</control>
+	</include>
+	
 <!-- =========== -->
 <!-- Banner (60) -->
 <!-- =========== -->
@@ -4874,9 +5102,10 @@
                 <onup>60</onup>
                 <ondown>60</ondown>
                 <movement>3</movement>
-                <focusposition>3</focusposition>
+                <!-- <focusposition>3</focusposition> -->
+				<focusposition>2</focusposition>
                 <preloaditems>2</preloaditems>
-                <itemlayout height="64" condition="!Container.Content(Episodes)">
+                <!-- <itemlayout height="64" condition="!Container.Content(Episodes)">
                     <control type="group">
                         <posx>630</posx>
                         <animation effect="slide" end="-34" time="0" condition="Container.Content(TVShows) + !Skin.HasSetting(posterstv)">Conditional</animation>
@@ -4964,8 +5193,8 @@
                             </control>
                         </control>
                     </control>
-                </itemlayout>
-                <itemlayout height="64" condition="Container.Content(Episodes)">
+                </itemlayout> -->
+                <!-- <itemlayout height="64" condition="Container.Content(Episodes)">
                     <control type="group">
                         <posx>762</posx>
                         <control type="image">
@@ -5011,8 +5240,76 @@
                             <align>left</align>
                         </control>
                     </control>
+                </itemlayout> -->
+				<!--NEW-->
+				<itemlayout height="96" condition="Container.Content(Episodes)">
+                    <control type="group">
+                        <posx>825</posx>
+                        <control type="label">
+                            <posx>-230</posx>
+                            <posy>0</posy>
+                            <width>210</width>
+                            <height>96</height>
+                            <label>$INFO[ListItem.Episode]</label>
+							<font>Font-Condensed-S80-B</font>
+                            <textcolor>80FFFFFF</textcolor>
+                            <scroll>false</scroll>
+                            <align>right</align>
+                        </control>
+                        <control type="image">
+                            <posx>-19</posx>
+                            <posy>-5</posy>
+                            <width>66</width>
+                            <height>66</height>
+                            <aspect>keepaspect</aspect>
+                            <texture>$VAR[BannerOverlayNF]</texture>
+                        </control>
+                        <control type="label">
+                            <posx>0</posx>
+                            <posy>33</posy>
+                            <width>690</width>
+                            <label>$INFO[ListItem.Label]</label>
+                            <font>Font-Condensed-S34-B</font>
+                            <textcolor>C0FFFFFF</textcolor>
+                            <scroll>false</scroll>
+                            <align>left</align>
+                            <visible>stringcompare(ListItem.ActualIcon,DefaultFolderBack.png)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>40</posx>
+                            <posy>13</posy>
+                            <width>650</width>
+                            <label>$INFO[ListItem.Title]</label>
+                            <font>Font-Condensed-S34-B</font>
+                            <textcolor>C0FFFFFF</textcolor>
+                            <scroll>false</scroll>
+                            <align>left</align>
+                            <visible>!stringcompare(ListItem.ActualIcon,DefaultFolderBack.png)</visible>
+                        </control>
+                        <!-- <control type="label">
+                            <posx>0</posx>
+                            <posy>51</posy>
+                            <width>690</width>
+                            <label>$INFO[ListItem.date,$LOCALIZE[41805]: ,]</label>
+                            <font>Font-Condensed-S28</font>
+                            <textcolor>80FFFFFF</textcolor>
+                            <scroll>false</scroll>
+                            <align>left</align>
+                        </control> -->
+						<control type="label">
+                            <posx>40</posx>
+                            <posy>51</posy>
+                            <width>690</width>
+                            <label>$INFO[ListItem.date]</label>
+                            <font>Font-Condensed-S28</font>
+                            <textcolor>80FFFFFF</textcolor>
+                            <scroll>false</scroll>
+                            <align>left</align>
+                        </control>
+                    </control>
                 </itemlayout>
-                <focusedlayout height="428" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(posterstv)] | Container.Content(Sets)">
+				<!--NEW END-->
+                <!-- <focusedlayout height="428" condition="Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(posterstv)] | Container.Content(Sets)">
                     <control type="group">
                         <posx>330</posx>
                         <animation effect="slide" start="0,64" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(60).OnPrevious">Focus</animation>
@@ -5157,8 +5454,8 @@
                             <texture border="1">windows/common/darkgrey.png</texture>
                         </control>
                     </control>
-                </focusedlayout>
-                <focusedlayout height="428" condition="Container.Content(TVShows) + !Skin.HasSetting(posterstv)">
+                </focusedlayout> -->
+                <!-- <focusedlayout height="428" condition="Container.Content(TVShows) + !Skin.HasSetting(posterstv)">
                     <control type="group">
                         <posx>330</posx>
                         <animation effect="slide" start="0,64" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(60).OnPrevious">Focus</animation>
@@ -5263,8 +5560,8 @@
                             </control>
                         </control>
                     </control>
-                </focusedlayout>
-                <focusedlayout height="428" condition="Container.Content(Seasons)">
+                </focusedlayout> -->
+                <!-- <focusedlayout height="428" condition="Container.Content(Seasons)">
                     <control type="group">
                         <posx>580</posx>
                         <animation effect="slide" start="0,64" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(60).OnPrevious">Focus</animation>
@@ -5348,112 +5645,96 @@
                             <texture border="1">windows/common/darkgrey.png</texture>
                         </control>
                     </control>
-                </focusedlayout>
-                <focusedlayout height="428" condition="Container.Content(Episodes)">
+                </focusedlayout> -->
+                <!-- NEW -->
+				<focusedlayout height="332" condition="Container.Content(Episodes)">
                     <control type="group">
-                        <posx>68</posx>
-                        <animation effect="slide" start="0,64" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(60).OnPrevious">Focus</animation>
-                        <animation effect="slide" start="0,-64" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(60).OnNext">Focus</animation>
+                        <posx>305</posx>
+                        <animation effect="slide" start="0,96" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(60).OnPrevious">Focus</animation>
+                        <animation effect="slide" start="0,-96" end="0,0" time="300" reversible="false" tween="back" easing="out" condition="Container(60).OnNext">Focus</animation>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>1512</width>
-                            <height>428</height>
+                            <width>1312</width>
+                            <height>332</height>
                             <texture border="60">views/banner/other/panel.png</texture>
                         </control>
                         <control type="image">
                             <posx>33</posx>
                             <posy>35</posy>
-                            <width>636</width>
-                            <height>358</height>
+                            <width>466</width>
+                            <height>263</height>
                             <texture diffuse="views/banner/diffuse/episode.png" background="true">$VAR[BannerLandscape]</texture>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
+                        <control type="image">
+                            <posx>338</posx>
+                            <posy>35</posy>
+                            <width>162</width>
+                            <height>262</height>
+                            <texture>views/banner/other/thumb-overlay.png</texture>
+                        </control>
                         <control type="group">
                             <posy>55</posy>
-                            <posx>694</posx>
+                            <posx>519</posx>
                             <control type="label">
                                 <posx>0</posx>
-                                <posy>4</posy>
-                                <width>100</width>
-                                <label>$VAR[ListItem.Season]$VAR[ListItem.Episode]</label>
-                                <font>Font-Condensed-S36</font>
-                                <textcolor>FF484848</textcolor>
-                                <scroll>false</scroll>
-                                <align>left</align>
-                                <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
-                            </control>
-                            <control type="label">
-                                <posx>100</posx>
-                                <posy>5</posy>
-                                <width>610</width>
-                                <label>$VAR[ListItem.Title]</label>
+                                <posy>2</posy>
+                                <width>690</width>
+                                <label>$INFO[ListItem.Label]</label>
                                 <font>Font-Condensed-S34-B</font>
                                 <textcolor>FF333333</textcolor>
+								<selectedcolor>SelectedGreen</selectedcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
                             </control>
                             <control type="image">
-                                <posx>695</posx>
+                                <posx>670</posx>
                                 <posy>-20</posy>
                                 <width>88</width>
                                 <height>88</height>
+                                <aspect>keepaspect</aspect>
                                 <texture>$VAR[BannerOverlayFo]</texture>
                             </control>
                             <control type="image">
-                                <posx>18</posx>
-                                <posy>68</posy>
-                                <width>43</width>
-                                <height>28</height>
-                                <texture>$VAR[BannerListHDSDFlag]</texture>
-                                <colordiffuse>eewhite</colordiffuse>
-                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                <description>Rating star</description>
+                                <posx>0</posx>
+                                <posy>50</posy>
+                                <width>21</width>
+                                <height>20</height>
+                                <texture>views/banner/other/rating.png</texture>
+                                <visible>!IsEmpty(ListItem.Rating)</visible>
                             </control>
                             <control type="label">
-                                <posx>100</posx>
-                                <posy>48</posy>
-                                <width>660</width>
-                                <label>$INFO[ListItem.Rating,★ ,]</label>
+                                <posx>27</posx>
+                                <posy>45</posy>
+                                <width>670</width>
+                                <label>$INFO[ListItem.Rating,, • ]$INFO[ListItem.date,$LOCALIZE[41805]: ,]</label>
                                 <font>Font-Condensed-S28</font>
                                 <textcolor>FF484848</textcolor>
+								<selectedcolor>FF484848</selectedcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                            </control>
-                            <control type="label">
-                                <posx>100</posx>
-                                <posy>85</posy>
-                                <width>660</width>
-                                <label>$INFO[ListItem.Date]</label>
-                                <font>Font-Condensed-S28</font>
-                                <textcolor>FF484848</textcolor>
-                                <scroll>false</scroll>
-                                <align>left</align>
+                                <animation effect="slide" end="-27" time="0" condition="IsEmpty(ListItem.Rating)">Conditional</animation>
                             </control>
                             <control type="textbox">
                                 <description>Plot</description>
                                 <posx>0</posx>
-                                <posy>122</posy>
-                                <width>760</width>
-                                <height>200</height>
+                                <posy>87</posy>
+                                <width>740</width>
+                                <height>140</height>
                                 <info>ListItem.Plot</info>
                                 <align>justify</align>
                                 <textcolor>FF484848</textcolor>
-                                <autoscroll delay="13000" time="3000" repeat="13000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-                                <font>Font-Condensed-S29</font>
+                                <autoscroll delay="13000" time="3000" repeat="13000" />
+                                <font>Font-Condensed-S25</font>
                             </control>
-                        </control>
-                        <control type="image">
-                            <description>Scrollbar underlay</description>
-                            <posx>666</posx>
-                            <posy>35</posy>
-                            <width>6</width>
-                            <height>358</height>
-                            <texture border="1">windows/common/darkgrey.png</texture>
                         </control>
                     </control>
                 </focusedlayout>
+				<!-- NEW END -->
             </control>
-            <control type="group">
+            <!-- <control type="group">
                 <animation effect="slide" start="0" end="-265" time="0" condition="Container.Content(TVShows) + !Skin.HasSetting(posterstv)">Conditional</animation>
                 <animation effect="slide" start="0" end="135" time="0" condition="Container.Content(Episodes)">Conditional</animation>
                 <animation effect="slide" start="0" end="250" time="0" condition="Container.Content(Seasons)">Conditional</animation>
@@ -5484,7 +5765,7 @@
                     <animation effect="fade" start="75" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(9772)">Conditional</animation>
                     <visible>Control.IsVisible(60)</visible>
                 </control>
-            </control>
+            </control> -->
         </control>
     </include>
 </includes>
