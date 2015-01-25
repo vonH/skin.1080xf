@@ -5032,7 +5032,6 @@
 			<control type="group">
 				<posy>535</posy>
 				<animation effect="fade" start="0" end="100" delay="415" time="300" reversible="false" condition="![Container(502).OnNext | Container(502).OnPrevious]">Conditional</animation>
-				<visible>Control.IsVisible(502)</visible>
 				<control type="image">
 					<description>Left arrow</description>
 					<posx>42</posx>
