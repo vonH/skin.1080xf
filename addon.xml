@@ -28,6 +28,7 @@
         <summary lang="nl">1080XF bijgewerkt voor Kodi 14.x door Piers</summary>
         <summary lang="pl">1080XF aktualizowana Kodi 14.x przez Piers</summary>
         <summary lang="ru">1080XF обновляется Коди 14.x Piers</summary>
+        <summary lang="tr">1080XF Piers tarafından Kodi 14.x için güncellenmiştir.</summary>
         <description lang="de">1080XF liefert Ihnen eine Haut mit gesundem Menschenverstand Home-Bildschirm, einem Schwerpunkt auf grafische Qualität, flüssige Animationen und sehr gut integrierte Funktionen / Add-ons.</description>
         <description lang="el">1080XF σας προσφέρει ένα δέρμα με αρχική οθόνη κοινή λογική, έμφαση στην ποιότητα γραφικών, ομαλή κίνηση και πολύ καλά ενσωματωμένες λειτουργίες / add-ons.</description>
         <description lang="en">1080XF delivers a common sense home screen, a focus on modern textures, smooth animations and very well integrated functions/add-ons.</description>
@@ -38,6 +39,7 @@
         <description lang="nl">1080XF levert u een huid met gezond verstand startscherm, een focus op de grafische kwaliteit, vloeiende animaties en zeer goed geïntegreerde functies / add-ons.</description>
         <description lang="pl">1080XF dostarcza wam skórę z ekranu głównego rozsądku, koncentrując się na jakości, gładkich graficznej animacji i bardzo dobrze zintegrowane funkcje / dodatków.</description>
         <description lang="ru">1080XF обеспечивает Вам кожу со здравым смыслом главном экране, акцентом на качество графики, плавная анимация и очень хорошо интегрированных функций / дополнений.</description>
+        <description lang="tr">1080XF modern dokulara odaklanarak yumuşak animasyonlar ve son derece iyi entegre olmuş fonksiyon/eklentilerle ana sayfanıza farklılık katar.</description>
         <disclaimer lang="de">Nur kompatibel mit Kodi 14.x "Helix"</disclaimer>
         <disclaimer lang="el">Kodi v14.x Helix</disclaimer>
         <disclaimer lang="en">Kodi v14.x Helix</disclaimer>
@@ -51,6 +53,7 @@
         <disclaimer lang="nl">Kodi v14.x Helix</disclaimer>
         <disclaimer lang="pl">Kodi v14.x Helix</disclaimer>
         <disclaimer lang="ru">Kodi v14.x Helix</disclaimer>
+        <disclaimer lang="tr">Kodi v14.x Helix</disclaimer>
         <platform>all</platform>
         <license>Creative Commons Attribution-Noncommercial-Share Alike 3.0</license>
         <forum>http://forum.kodi.tv/showthread.php?tid=210425</forum>
