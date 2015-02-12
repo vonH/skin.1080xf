@@ -436,18 +436,18 @@
                                 </control>
                             </control>
                         </control>
-                        <control type="group">
+                        <control type="group"><!-- Online STREAMING Content starts here-->
                             <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
                             <posy>825</posy>
                             <control type="image">
                                 <posx>80</posx>
-                                <posy>67</posy>
+                                <posy>-35</posy>
                                 <width>276</width>
-                                <height>276</height>
+                                <height>394</height>
                                 <bordersize>20</bordersize>
                                 <bordertexture border="30">osd/fullscreen/cover-shadow.png</bordertexture>
                                 <texture background="true">$INFO[VideoPlayer.Cover]</texture>
-                                <aspectratio aligny="top">keep</aspectratio>
+                                <aspectratio aligny="center">keep</aspectratio>
                             </control>
                             <control type="label">
                                 <posx>360</posx>
@@ -493,24 +493,11 @@
                                     <scroll>false</scroll>
                                     <visible>!IsEmpty(VideoPlayer.Album)</visible>
                                 </control>
-                                <control type="label">
-                                    <posx>0</posx>
-                                    <posy>0</posy>
-                                    <width>1460</width>
-                                    <height>44</height>
-                                    <label>$INFO[Player.FolderPath]</label>
-                                    <textcolor>88FFFFFF</textcolor>
-                                    <font>Font-Condensed-S36</font>
-                                    <align>left</align>
-                                    <aligny>center</aligny>
-
-                                    <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
-                                </control>
 								<control type="textbox">
 +                                    <posx>360</posx>
 +                                    <posy>192</posy>
 +                                    <width>1460</width>
-+                                    <height>90</height>
++                                    <height>95</height>
 +                                    <label>$INFO[VideoPlayer.Plot]</label>
 +                                    <textcolor>aawhite</textcolor>
 +                                    <font>Font-Condensed-S32</font>
@@ -518,8 +505,21 @@
 +                                    <visible>!IsEmpty(VideoPlayer.Plot)</visible>
 +                                    <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                                  </control>
+								<control type="label">
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>1460</width>
+									<height>29</height>
+									<label>$INFO[Player.FolderPath]</label>
+									<textcolor>88FFFFFF</textcolor>
+									<font>Font-Condensed-S25</font>
+									<align>left</align>
+									<aligny>center</aligny>
+									
+									<autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
+								</control>
                             </control>
-                        </control>
+                        </control><!-- Online STREAMING Content ends here-->
                     </control>
                 </control>
             </control>
