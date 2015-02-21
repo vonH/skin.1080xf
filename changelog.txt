@@ -1,3 +1,6 @@
+[B]3.45.50[/B]
+• Adds small progress indicator to Video and Audio when pressing 'M'.
+
 [B]3.45.496[/B]
 • File Manager now corrected.
 - Sizes are displayed (includes calcuated size and file size)
